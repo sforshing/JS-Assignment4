@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Assignment4 | COMP1073 Client-Side JavaScript</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="css/normalize.css" rel="stylesheet" />
+	<link href="css/styles.css" rel="stylesheet" />
+	<script src="js/index.js" defer></script>
+</head>
+<body>
+  <h1>Latest News and weather from Around the World</h1>
+  <form id="country-form">
+    <label><input type="radio" name="country" value="us">United States</label>
+    <label><input type="radio" name="country" value="gb">United Kingdom</label>
+    <label><input type="radio" name="country" value="ca">Canada</label>
+    <label><input type="radio" name="country" value="au">Australia</label>
+    <label><input type="radio" name="country" value="in">India</label>
+    <br><br>
+    <!-- add number of news selection -->
+    <label>Select number of news</label>
+    <select id="numNews">
+      <option value="5">5</option>
+      <option value="10">10</option>
+      <option value="15">15</option>
+      <option value="20">20</option>
+    </select>
+    <br><br>
+    <button type="submit">Submit</button>
+  </form>
+  <hr>
+  <div id="weather-section">
+    <h2>Current Weather</h2>
+    <p id="weather"></p>
+  </div>
+  <hr>
+  <div id="news-section">
+    <h2>Top Headlines</h2>
+    <ul id="news"></ul>
+  </div>
+</body>
+</html>
